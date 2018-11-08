@@ -11,6 +11,7 @@ export class TarifsService {
   constructor(private http: HttpClient) { }
 
 getTarifFilterByPrice() {
+  // return this.http.get(`${this.BASE_URL}?dataset=transpole-gammetarifaire&rows=20&sort=-prix&facet=typetitreproduit`);
   return this.http.get(this.BASE_URL + '?dataset=transpole-gammetarifaire&rows=20&sort=-prix&facet=typetitreproduit');
 }
 
